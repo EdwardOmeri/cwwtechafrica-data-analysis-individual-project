@@ -28,8 +28,18 @@ print(durations_df)
 # Importing matplotlib.pyplot
 import matplotlib.pyplot as plt
 
+# Drawing a line plot of release_years and durations
 plt.plot(years,durations)
 plt.title ("Netflix Movie Durations 2011-2020")
 plt.xlabel("years")
 plt.ylabel("durations")
+plt.grid(True)
+# Show the plot
 plt.show()
+
+# Task 4: Loading Data 
+
+# Read in the CSV as a DataFrame
+netflix_df = pd.read_csv ("netflix_data.csv")
+
+netflix_df.head(5)
